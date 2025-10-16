@@ -52,11 +52,16 @@ Screenshots
 
 <img width="1176" height="877" alt="Screenshot 2025-10-17 022521" src="https://github.com/user-attachments/assets/010ecda6-9645-4f4e-a7f8-9574176cbfb5" />
 
+
+
 FILE STRUCTURE
 week7/
 ├── week8.java
 ├── week8.class
 ├── mysql-connector-j-9.3.0.jar
 └── ...
+
+
+
 Author
 Amrita Hariharan
