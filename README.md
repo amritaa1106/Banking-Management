@@ -1,89 +1,110 @@
-1.Banking Management System
+# 🏦 Banking Management System
 
-A desktop application developed in Java Swing for managing bank accounts, with data stored in a MySQL database via JDBC.
+A simple yet powerful **Java Swing** desktop application for managing bank accounts 💳 — designed to make account handling fast, visual, and efficient! Data is stored securely in a **MySQL** database, connected via **JDBC**.
 
-2.Features
+---
 
-Add new account holders
+## ✨ Features
 
-Update account details
+💡 **Add New Account Holders** – Quickly register new customers with full details.
+📝 **Update Account Info** – Modify existing records easily.
+❌ **Delete Accounts** – Remove inactive or test accounts with one click.
+📊 **View Balances & Status** – Display all accounts neatly in a table view.
+⚙️ **Test Database Connection** – Validate your MySQL setup right from the GUI!
 
-Delete existing accounts
+---
 
-View balances and account status in a table
+## 🧠 Technologies Used
 
-Test database connection directly from the GUI
+🟨 **Java Swing** – For a modern, interactive desktop interface
+🗄️ **MySQL** – Reliable backend data storage
+🔗 **JDBC (MySQL Connector)** – For smooth database connectivity
 
+---
 
+## 🚀 Setup Instructions
 
-3.Technologies Used
+### 1️⃣ Clone or Download the Project
 
-Java (Swing for GUI)
+```bash
+git clone https://github.com/YOUR_USERNAME/BankingManagementSystem.git
+```
 
+Or simply copy all `.java` and required files into a folder (e.g., `week7`).
 
-MySQL
+### 2️⃣ Set Up the Database
 
-JDBC (mysql-connector)
+* Create a MySQL database:
 
+  ```sql
+  CREATE DATABASE bankcontent;
+  ```
+* Add a table for storing accounts (you can customize the schema).
 
-4. Setup Instructions
+### 3️⃣ Add the JDBC Driver
 
-Clone or Download the Project
+Download `mysql-connector-j-9.3.0.jar` and place it in your project directory.
 
-Copy all .java source files and supporting files into a folder (e.g., week7).
+### 4️⃣ Compile the Code
 
-
-Setup MySQL Database
-
-Create a MySQL database (e.g., bankcontent) and Accounts table
-
-Adjust table schema if needed.
-
-Download JDBC Driver
-
-Download mysql-connector JAR and place it in the project directory.
-
-Compile the Application
-
+```bash
 javac week8.java
+```
 
+### 5️⃣ Run the Application
 
-
-Run the Application
-
+```bash
 java -cp ".;mysql-connector-j-9.3.0.jar" week8
+```
 
-On Mac/Linux, replace ; with : in the classpath.
+👉 *(Use `:` instead of `;` on Mac/Linux.)*
 
+### 6️⃣ Configure Your Database Credentials
 
-Edit Database Credentials (if needed)
+At the top of `week8.java`, update your MySQL details if needed:
 
-Update the constants at the top of week8.java to match your MySQL username, password, and database name:
-
-java
-
+```java
 private static final String DB_URL = "jdbc:mysql://localhost:3306/bankcontent";
-
 private static final String DB_USER = "root";
-
 private static final String DB_PASSWORD = "your_password";
+```
 
-5. Screenshots
+---
 
-<img width="1176" height="877" alt="Screenshot 2025-10-17 022521" src="https://github.com/user-attachments/assets/010ecda6-9645-4f4e-a7f8-9574176cbfb5" />
+## 🖼️ Screenshots
 
+|                                                               💻 GUI Preview                                                              |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
+| <img width="1176" height="877" alt="Banking GUI" src="https://github.com/user-attachments/assets/010ecda6-9645-4f4e-a7f8-9574176cbfb5" /> |
 
+---
 
-6. FILE STRUCTURE
+## 📂 File Structure
+
+```
 week7/
-
 ├── week8.java
-
 ├── week8.class
-
 ├── mysql-connector-j-9.3.0.jar
-
 └── ...
+```
+
+---
+
+## 👩‍💻 Author
+
+**Amrita Hariharan**
+💬 Passionate about building reliable, scalable Java applications
+🌱 Currently exploring full-stack development and AI-driven systems
+
+If you liked this project, don’t forget to ⭐ it on GitHub!
+Let’s make banking management simpler — one line of code at a time 💻💙
+
+---
+
+
+
+
 
 
 
